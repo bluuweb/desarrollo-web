@@ -148,7 +148,7 @@ Imágenes
 * Material Theme
 * Beautify
 
-<img :src="$withBase('/img/beautify.png')" alt="foo">
+<img :src="$withBase('/img/beautify.PNG')" alt="foo">
 
 
 
