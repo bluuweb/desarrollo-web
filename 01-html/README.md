@@ -51,7 +51,7 @@ Veamos un ejemplo rápido para poner marcha a nuestro código
 
 ## Etiquetas populares
 
-Encabezados o títulos
+#### Encabezados o títulos
 ```html
 <h1>Título principal de nuestro sitio web.</h1>
 <h2>Utilízala en los encabezados de secciones.</h2>
@@ -61,12 +61,12 @@ Encabezados o títulos
 <h6>No existe el "<h7>" por lo tanto está es la última.</h6>
 ```
 
-Párrafo
+#### Párrafo
 ```html
 <p>Tu primer párrafo.</p>
 ```
 
-Listas e índices
+#### Listas e índices
 ```html
 <ul>
    <li>Elemento 1</li>
@@ -84,7 +84,7 @@ Listas e índices
 </ol>
 ```
 
-Comentarios: Son ayudas para documentar nuestro código.
+#### Comentarios: Son ayudas para documentar nuestro código.
 ```html
 <!-- Este es un comentario -->
 <!-- Esta etiqueta centra nuestro contenido
@@ -93,12 +93,12 @@ Se utilizaba en la versión 4
 Maravilloso -->
 ```
 
-Anclas o Hipervínculos
+#### Anclas o Hipervínculos
 ```html
 <a href="https://youtube.com/bluuweb">Ir a página de Google</a>
 ```
 
-Imágenes
+#### Imágenes
 ```html
 <!-- Sin etiqueta de cierre, ¿qué curioso no? -->
 <img src="https://mdn.mozillademos.org/files/11913/htmlexp.png">
@@ -149,6 +149,34 @@ Imágenes
 * Beautify
 
 <img :src="$withBase('/img/beautify.PNG')" alt="foo">
+
+## Imágenes
+[https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img)
+
+```html
+<img src="mdn-logo-sm.png" alt="MDN">
+```
+
+#### Atributos
+* `alt` Este atributo define el texto alternativo que describe la imagen. Los usuarios lo verán; si la URL de la imagen es errónea, la imagen tiene un formato no soportado, o si la imagen aun no se ha descargado.
+* `src` La URL de la imagen. Este atributo es obligatorio.
+
+#### Formatos de imagen soportada
+* JPEG
+* GIF, including animated GIFs
+* PNG
+* APNG
+* SVG
+* BMP
+* BMP ICO
+* PNG ICO
+
+#### Variantes
+```html
+<a href="https://developer.mozilla.org/">
+  <img src="mdn-logo-sm.png" alt="MDN">
+</a>
+```
 
 
 
