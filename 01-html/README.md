@@ -66,6 +66,31 @@ Veamos un ejemplo rápido para poner marcha a nuestro código
 <p>Tu primer párrafo.</p>
 ```
 
+#### Formato
+[https://www.w3schools.com/html/html_formatting.asp](https://www.w3schools.com/html/html_formatting.asp)
+```html
+<b>Texto en negrita</b>
+<i>Texto en cursiva</i>
+<s>Texto tachado</s>
+<del>Texto eliminado</del>
+<ins>Texto insertado</ins>
+<sub>Texto de subíndice</sub>
+<sup>Texto en superíndice</sup>
+<small>Texto pequeño</small>
+<mark>Texto marcado</mark>
+
+<hr>
+
+<strong>Texto importante</strong>  
+<em>Texto enfatizado</em>
+
+<p>
+    Este es un párrafo <b>que contiene texto en negritas</b> y además
+    de <i>un texto en cursivas</i> y como no
+    un <b><s>Un texto tachado y en negritas.</s></b>
+</p>
+```
+
 #### Listas e índices
 ```html
 <ul>
@@ -118,8 +143,70 @@ Maravilloso -->
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem doloremque corporis facere error et quasi minima iure animi id, nulla iste aliquam tenetur sequi natus nemo rerum magni assumenda.</p>
 <!-- aquí un enlace con un botón -->
 <a href="https://www.youtube.com/bluuweb">
-    <button>Dame un like?</button>
+    <button>¿Dame un like?</button>
 </a>
+```
+
+## Imágenes
+[https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img)
+
+```html
+<img src="mdn-logo-sm.png" alt="MDN">
+```
+
+#### Atributos
+* `alt` Este atributo define el texto alternativo que describe la imagen. Los usuarios lo verán; si la URL de la imagen es errónea, la imagen tiene un formato no soportado, o si la imagen aun no se ha descargado.
+* `src` La URL de la imagen. Este atributo es obligatorio.
+
+#### Formatos de imagen soportada
+* JPEG
+* GIF, including animated GIFs
+* PNG
+* APNG
+* SVG
+* BMP
+* BMP ICO
+* PNG ICO
+
+#### Variantes
+```html
+<a href="https://developer.mozilla.org/">
+  <img src="mdn-logo-sm.png" alt="MDN">
+</a>
+```
+
+## Anclas
+El Elemento HTML Anchor `<a>` crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.
+
+```html
+<a href="https://developer.mozilla.org">MDN</a>
+```
+
+## Desafío
+
+* Crea 3 documentos HTML en una misma carpeta.
+* Utiliza la estructura de HTML5 ya aprendida.
+* En cada uno de ellos crea anclas para navegar entre estos documentos.
+* Utiliza el siguiente ejemplo como guía.
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+</head>
+
+<body>
+    <h1>Página #1</h1>
+    <a href="pagina-2.html">
+        <button>Ir a página dos</button>
+    </a>
+</body>
+
+</html>
 ```
 
 ## Link útiles
@@ -150,33 +237,6 @@ Maravilloso -->
 
 <img :src="$withBase('/img/beautify.PNG')" alt="foo">
 
-## Imágenes
-[https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/img)
-
-```html
-<img src="mdn-logo-sm.png" alt="MDN">
-```
-
-#### Atributos
-* `alt` Este atributo define el texto alternativo que describe la imagen. Los usuarios lo verán; si la URL de la imagen es errónea, la imagen tiene un formato no soportado, o si la imagen aun no se ha descargado.
-* `src` La URL de la imagen. Este atributo es obligatorio.
-
-#### Formatos de imagen soportada
-* JPEG
-* GIF, including animated GIFs
-* PNG
-* APNG
-* SVG
-* BMP
-* BMP ICO
-* PNG ICO
-
-#### Variantes
-```html
-<a href="https://developer.mozilla.org/">
-  <img src="mdn-logo-sm.png" alt="MDN">
-</a>
-```
 
 
 
