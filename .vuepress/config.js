@@ -33,6 +33,7 @@ module.exports = {
     sidebar: [
       '/',
       '/01-html/',
+      '/02-html-avanzado/',
     ]
   }
 

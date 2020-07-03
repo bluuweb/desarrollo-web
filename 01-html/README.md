@@ -129,6 +129,17 @@ Maravilloso -->
 <img src="https://mdn.mozillademos.org/files/11913/htmlexp.png">
 ```
 
+#### Divisiones
+```html
+<!-- Dividimos el sitio web en secciones -->
+<div>
+    <a href="https://google.com">Google</a>
+</div>
+<div>
+    <img src="https://mdn.mozillademos.org/files/11913/htmlexp.png">
+</div>
+```
+
 [https://devdocs.io/html/](https://devdocs.io/html/)
 
 ## Práctica
