@@ -149,4 +149,112 @@ Conozcamos cosas más avanzadas de HTML
 ```
 
 ## Formularios
-En construcción...
+[https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)
+Los formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o aplicación. Los formularios permiten a los usuarios ingresar datos, que generalmente se envían a un servidor web para su procesamiento y almacenamiento.
+
+#### form
+Define el contenedor para el formulario. Admite algunos atributos específicos para configurar la forma en que se comporta el formulario. Todos sus atributos son opcionales, pero es una práctica estándar establecer siempre al menos los atributos action y method:
+```html
+<form action="" method="">
+
+</form>
+```
+
+#### input
+Aquí es donde nuestro usuario puede ingresar datos. Contamos con varios atributos:
+* `type` dato que recibirá el input.
+* `placeholder` texto de ayuda para el usuario.
+* `id` identificador único.
+* `name` nombre del input, nos sire para asociar información al dato ingresado por ejemplo: <br><b>curso = "texto proporcionado por el usuario"</b>
+```html
+<input id="curso" type="text" placeholder="Ingrese un curso" name="curso">
+```
+
+#### label
+Texto adicional que describe al ``input`` es por esto que cuenta con el atributo ``for`` donde ingresamos el id del ``input``.
+```html
+<label for="curso">Curso: </label>
+```
+
+#### button
+Es un botón para procesar nuestro formulario es por esto que cuenta con el atributo `submit`
+```html
+<button type="submit">Enviar</button>
+```
+
+#### Formulario completo
+```html
+<form action="recibir.html" method="GET">
+    <label for="curso">Curso: </label>
+    <input id="curso" type="text" placeholder="Ingrese un curso" name="curso">
+    <button type="submit">Enviar</button>
+</form>
+```
+
+## Input
+Existen diferentes tipos de `input`
+[https://www.w3schools.com/tags/tag_input.asp](https://www.w3schools.com/tags/tag_input.asp)
+
+```html
+<form action="recibir.html" method="GET">
+    <input type="email" required>
+    <button type="submit">Enviar</button>
+</form>
+```
+
+```html
+<input type="password">
+```
+
+```html
+<textarea name="mensaje" rows="10" cols="30">
+Ingrese aquí su mensaje
+</textarea>
+```
+
+```html
+<form>
+    <input type="radio" id="gato" name="gender" value="gato">
+    <label for="gato">Gato</label>
+    <input type="radio" id="perro" name="gender" value="perro">
+    <label for="perro">Perro</label>
+    <input type="radio" id="otro" name="gender" value="otro">
+    <label for="otros">Otro</label>
+</form>
+```
+
+
+```html
+<input type="button" value="Enviar">
+```
+
+```html
+<input type="color">
+```
+
+```html
+<input type="date">
+<input type="datetime-local">
+```
+
+```html
+<input type="file">
+```
+
+```html
+<input type="month">
+```
+
+```html
+<input type="range">
+```
+
+```html
+<input type="time">
+```
+
+```html
+<input type="week">
+```
+
+En la siguiente sección conoceremos los estilos en CSS y hablaremos un poco más sobre los formularios.

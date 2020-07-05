@@ -9,35 +9,33 @@
 
 <body>
 
+    <form action="recibir.html" method="GET">
+        <label for="curso">Curso: </label>
+        <input id="curso" type="text" placeholder="Ingrese un curso" name="curso">
+        <input type="number">
+        <button type="submit">Enviar</button>
+    </form>
 
-    <table border='1'>
-        <thead>
-            <tr>
-                <th>Mascota</th>
-                <th>Edad</th>
-                <th>Color</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Gato</td>
-                <td>3 años</td>
-                <td>Negro</td>
-            </tr>
-            <tr>
-                <td>Perro</td>
-                <td>1 mes</td>
-                <td rowspan="2">Azul</td>
-            </tr>
-            <tr>
-                <td>Rana</td>
-                <td>2 semanas</td>
-            </tr>
-        </tbody>
-    </table>
+    <br>
 
+    <form>
+        <input type="radio" id="gato" name="gender" value="gato">
+        <label for="gato">Gato</label>
+        <input type="radio" id="perro" name="gender" value="perro">
+        <label for="perro">Perro</label>
+        <input type="radio" id="otro" name="gender" value="otro">
+        <label for="otros">Otro</label>
+    </form>
 
-    <a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a>
+    <br>
+
+    <textarea name="mensaje" rows="10" cols="30">
+Ingrese aquí su mensaje
+</textarea>
+
+    <form action="recibir.html" method="GET">
+        <input type="password">
+    </form>
 
 </body>
 
