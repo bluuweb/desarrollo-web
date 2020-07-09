@@ -107,3 +107,171 @@ Trata de resolver los siguientes ejercicios:
 * [Ejercicio 3](https://www.w3schools.com/css/exercise.asp?filename=exercise_selectors3)
 
 ## Práctica
+
+<img :src="$withBase('/img/sitio-css-1.PNG')" alt="foo">
+
+Documentación utilizada:
+* [Etiquetas HTML](https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main)
+* [Colores](https://colorhunt.co/palette/191657)
+* [Width CSS](https://www.w3schools.com/cssref/pr_dim_width.asp)
+* [Text align](https://www.w3schools.com/cssref/pr_text_text-align.asp)
+* [Background color](https://www.w3schools.com/cssref/pr_background-color.asp)
+
+```css
+/* 
+https://colorhunt.co/palette/191657 
+*/
+
+/* 
+primary: #383e56
+secondary: #f69e7b 
+light: #eedad1
+info: #d4b5b0
+*/
+
+
+.bg-primary {
+    background-color: #383e56;
+}
+
+.bg-secondary {
+    background-color: #f69e7b;
+}
+
+.bg-light {
+    background-color: #eedad1;
+}
+
+.bg-info {
+    background-color: #d4b5b0;
+}
+
+.text-primary {
+    color: #383e56;
+}
+
+.text-secondary {
+    color: #f69e7b;
+}
+
+.text-light {
+    color: #eedad1;
+}
+
+.text-info {
+    color: #d4b5b0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-200 {
+    width: 200px;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web con CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- agregar secciones -->
+    <header class="bg-primary text-center">
+        <hr>
+        <h1 class="text-light">Mi primer sitio web con estilos CSS</h1>
+        <hr class="bg-primary">
+        <p class="text-info">Lorem ipsum dolor sit amet consectetur.</p>
+        <hr>
+    </header>
+
+    <!-- navbar -->
+    <nav class="text-center">
+        <button class="w-200 bg-secondary text-primary">Inicio</button>
+        <button class="w-200 bg-secondary text-primary">Nosotros</button>
+        <button class="w-200 bg-secondary text-primary">Servicios</button>
+        <button class="w-200 bg-secondary text-primary">Blog</button>
+        <button class="w-200 bg-secondary text-primary">Contacto</button>
+    </nav>
+    <!-- navbar -->
+
+    <!-- main -->
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <div class="bg-info">
+                        <hr>
+                        <h3 class="text-center text-primary">Lorem, ipsum dolor.</h3>
+                        <hr>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati nihil vitae
+                            expedita neque aperiam a exercitationem tempore reiciendis recusandae, minima velit. Quis
+                            voluptatem error delectus doloremque placeat aspernatur. Excepturi!
+                        </p>
+                        <hr>
+                        <div class="text-center">
+                            <button class="bg-primary text-white">Más información</button>
+                        </div>
+                        <hr>
+                    </div>
+                </td>
+                <td>
+                    <div class="bg-info">
+                        <hr>
+                        <h3 class="text-center text-primary">Lorem, ipsum dolor.</h3>
+                        <hr>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati nihil vitae
+                            expedita neque aperiam a exercitationem tempore reiciendis recusandae, minima velit. Quis
+                            voluptatem error delectus doloremque placeat aspernatur. Excepturi!
+                        </p>
+                        <hr>
+                        <div class="text-center">
+                            <button class="bg-primary text-white">Más información</button>
+                        </div>
+                        <hr>
+                    </div>
+                </td>
+                <td>
+                    <div class="bg-info">
+                        <hr>
+                        <h3 class="text-center text-primary">Lorem, ipsum dolor.</h3>
+                        <hr>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis obcaecati nihil vitae
+                            expedita neque aperiam a exercitationem tempore reiciendis recusandae, minima velit. Quis
+                            voluptatem error delectus doloremque placeat aspernatur. Excepturi!
+                        </p>
+                        <hr>
+                        <div class="text-center">
+                            <button class="bg-primary text-white">Más información</button>
+                        </div>
+                        <hr>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <!-- main -->
+
+    <!-- pie de página -->
+    <footer class="bg-secondary text-center">
+        <hr>
+        <p>Todos los derechos reservados 2020</p>
+    </footer>
+</body>
+
+</html>
+```

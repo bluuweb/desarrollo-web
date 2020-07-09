@@ -1,13 +1,55 @@
-h1 {
-    font-size: 50px;
+/* 
+https: //colorhunt.co/palette/191657 
+*/
+
+/* 
+primary: #383e56
+secondary: #f69e7b 
+light: #eedad1
+info: #d4b5b0
+*/
+
+
+.bg-primary {
+    background-color: #383e56;
 }
 
-#mi_id_unico {
+.bg-secondary {
+    background-color: #f69e7b;
+}
+
+.bg-light {
+    background-color: #eedad1;
+}
+
+.bg-info {
+    background-color: #d4b5b0;
+}
+
+.text-primary {
+    color: #383e56;
+}
+
+.text-secondary {
+    color: #f69e7b;
+}
+
+.text-light {
+    color: #eedad1;
+}
+
+.text-info {
+    color: #d4b5b0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
     text-align: center;
-    color: #14b1ab;
 }
 
-.mi-clase {
-    background-color: #e8505b;
-    color: #f3ecc2;
+.w-200 {
+    width: 200px;
 }
