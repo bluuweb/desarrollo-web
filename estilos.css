@@ -1,0 +1,13 @@
+h1 {
+    font-size: 50px;
+}
+
+#mi_id_unico {
+    text-align: center;
+    color: #14b1ab;
+}
+
+.mi-clase {
+    background-color: #e8505b;
+    color: #f3ecc2;
+}
