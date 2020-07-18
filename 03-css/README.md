@@ -48,6 +48,18 @@ Dentro del head puedes incluir código CSS:
 </style>
 ```
 
+Por lo tanto tienes 3 formas de trabajar con CSS:
+* CSS externo
+* CSS interno
+* CSS en línea
+
+:::tip ¿Por qué se llaman estilos en cascada?
+Esto pasa porque se pueden sobre-escribir los estilos para un determinado elemento.
+Por lo tanto, un estilo en línea tiene la máxima prioridad y anulará los estilos externos e internos y los valores predeterminados del navegador.
+[https://www.w3schools.com/css/css_howto.asp](https://www.w3schools.com/css/css_howto.asp)
+:::
+
+
 ## colores
 [https://www.w3schools.com/css/css_colors.asp](https://www.w3schools.com/css/css_colors.asp)
 
@@ -116,6 +128,7 @@ Documentación utilizada:
 * [Width CSS](https://www.w3schools.com/cssref/pr_dim_width.asp)
 * [Text align](https://www.w3schools.com/cssref/pr_text_text-align.asp)
 * [Background color](https://www.w3schools.com/cssref/pr_background-color.asp)
+* [Comentarios en CSS](https://www.w3schools.com/css/css_comments.asp)
 
 ```css
 /* 

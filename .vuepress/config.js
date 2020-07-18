@@ -35,6 +35,7 @@ module.exports = {
       '/01-html/',
       '/02-html-intermedio/',
       '/03-css/',
+      '/04-css-intermedio/',
     ]
   }
 
