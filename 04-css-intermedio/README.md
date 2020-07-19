@@ -90,17 +90,6 @@ div {
 ```
 Aquí, el elemento ``<div>`` tiene un ancho de 300 px. Sin embargo, el ancho real del elemento `` <div>`` será de 350 px (300 px + 25 px de relleno izquierdo + 25 px de relleno derecho)
 
-## box-sizing
-Para mantener el ancho a 300 px, sin importar la cantidad de relleno, puede usar la propiedad ``box-sizing``. Esto hace que el elemento mantenga su ancho; Si aumenta el relleno, el espacio de contenido disponible disminuirá.
-
-Use la propiedad de tamaño de caja para mantener el ancho a 300 px, sin importar la cantidad de relleno:
-```css
-div {
-  width: 300px;
-  padding: 25px;
-  box-sizing: border-box;
-}
-```
 
 ## Margin
 Las marginpropiedades CSS se utilizan para crear espacio alrededor de los elementos, fuera de los bordes definidos.
@@ -113,6 +102,46 @@ margin-bottom
 margin-left
 ```
 
+## Altura y ancho
+Las propiedades ``height`` y ``width`` se utilizan para establecer el alto y el ancho de un elemento.
+[https://www.w3schools.com/css/css_dimension.asp](https://www.w3schools.com/css/css_dimension.asp)
+
+```css
+.caja {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+```
+
+## Display: inline-block
+En comparación con ``display: inline``, la principal diferencia es que ``display: inline-block`` permite establecer un ancho y alto en el elemento.
+Además, con display: ``inline-block``, se respetan los márgenes / rellenos superiores e inferiores, pero con ``display: inline`` no.
+En comparación con ``display: block``, la principal diferencia es que ``display: inline-block`` no agrega un salto de línea después del elemento, por lo que el elemento puede sentarse junto a otros elementos.
+
+[https://www.w3schools.com/css/css_inline-block.asp](https://www.w3schools.com/css/css_inline-block.asp)
 
 
+## Modelo de caja
+[https://www.w3schools.com/css/css_boxmodel.asp](https://www.w3schools.com/css/css_boxmodel.asp)
 
+
+<!-- Ver antes los anchos para conocer box -->
+## box-sizing
+Para mantener el ancho a 300 px, sin importar la cantidad de relleno, puede usar la propiedad ``box-sizing``. Esto hace que el elemento mantenga su ancho; Si aumenta el relleno, el espacio de contenido disponible disminuirá.
+
+[https://www.w3schools.com/css/css3_box-sizing.asp](https://www.w3schools.com/css/css3_box-sizing.asp)
+
+Use la propiedad de tamaño de caja para mantener el ancho a 300 px, sin importar la cantidad de relleno:
+```css
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+```
+
+## Normalize CSS
+[https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)
+
+Normalize.css hace que los navegadores procesen todos los elementos de manera más consistente y en línea con los estándares modernos. Precisamente se dirige solo a los estilos que necesitan normalizarse.
