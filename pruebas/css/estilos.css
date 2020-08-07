@@ -1,0 +1,172 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.px-5 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.bg-primary {
+    background-color: #007bff;
+}
+
+.bg-secondary {
+    background-color: #383e56;
+}
+
+.bg-danger {
+    background-color: #e7305b;
+}
+
+.bg-success {
+    background-color: #184d47;
+}
+
+.bg-info {
+    background-color: #fb7813;
+}
+
+.font-100{
+    font-weight: 100;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 50px;
+    display: inline-block;
+    padding: 30px 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 18px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0;
+    color: #383e56;
+}
+
+.card-text {
+    line-height: 1.5;
+}
+
+/* flexbox */
+.item {
+    background-color: #fb7813;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.d-flex {
+    display: flex;
+    border: solid;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+

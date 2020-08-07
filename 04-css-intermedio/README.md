@@ -145,3 +145,163 @@ div {
 [https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)
 
 Normalize.css hace que los navegadores procesen todos los elementos de manera más consistente y en línea con los estándares modernos. Precisamente se dirige solo a los estilos que necesitan normalizarse.
+
+## Práctica
+Prácticando lo aprendido:
+
+### Normalize
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web con CSS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+```
+
+### Container centrado
+
+```html
+<body class="mt-5 container mx-auto">
+
+    <!-- logo -->
+    <div class="bg-primary w-500 mx-auto">
+        <div class="text-center">
+            <a href="#" class="logo text-white">Logo Empresa</a>
+        </div>
+    </div>
+
+</body>
+```
+
+```css
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.bg-primary {
+    background-color: #007bff;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 50px;
+    display: inline-block;
+    padding: 30px 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+```
+
+### botones
+
+```html
+<!-- botones -->
+<div class="my-5">
+    <a href="" class="btn bg-primary text-white">primary</a>
+    <a href="" class="btn bg-secondary text-white">secondary</a>
+    <a href="" class="btn bg-danger text-white">danger</a>
+    <a href="" class="btn bg-info text-white">info</a>
+    <a href="" class="btn bg-success text-white">success</a>
+</div>
+```
+
+```css
+.bg-primary {
+    background-color: #007bff;
+}
+
+.bg-secondary {
+    background-color: #383e56;
+}
+
+.bg-danger {
+    background-color: #e7305b;
+}
+
+.bg-info {
+    background-color: #fb7813;
+}
+
+.bg-success {
+    background-color: #184d47;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+```
+
+### Cards
+
+```html
+<!-- cards -->
+<div class="card" style="width: 400px;">
+    <img src="images/500x300.jpg" class="card-img" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        <a href="#" class="btn bg-primary text-white">Go somewhere</a>
+    </div>
+</div>
+```
+
+```css
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+}
+
+.card-img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 18px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0;
+    color: #383e56;
+}
+
+.card-text {
+    line-height: 1.5;
+}
+```
