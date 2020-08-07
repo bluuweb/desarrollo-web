@@ -167,57 +167,56 @@ Prácticando lo aprendido:
 <body class="mt-5 container mx-auto">
 
     <!-- logo -->
-    <div class="bg-primary w-500 mx-auto">
-        <div class="text-center">
-            <a href="#" class="logo text-white">Logo Empresa</a>
-        </div>
+    <div class="bg-primary w-500 mx-auto text-center">
+        <a href="#" class="logo text-white">Logo Empresa</a>
     </div>
 
 </body>
 ```
 
 ```css
+/* Utilidades */
 * {
     box-sizing: border-box;
 }
-
 .container {
-    width: 80%;
+    width: 90%;
 }
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mt-5 {
-    margin-top: 5px;
-}
-
-.w-500 {
-    width: 500px;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.text-white {
-    color: #ffffff;
-}
-
-.bg-primary {
-    background-color: #007bff;
-}
-
 .logo {
     text-decoration: none;
     font-size: 50px;
     display: inline-block;
     padding: 30px 0;
-    font-weight: 300;
     text-transform: uppercase;
 }
+
+/* Margenes */
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+
+/* Medidas */
+.w-500 {
+    width: 500px;
+}
+
+/* Textos */
+.text-center{
+    text-align: center;
+}
+.text-white {
+    color: #ffffff;
+}
+
+/* Colores */
+.bg-primary {
+    background-color: #007bff;
+}
+
 
 ```
 
@@ -268,8 +267,8 @@ Prácticando lo aprendido:
 
 ```html
 <!-- cards -->
-<div class="card" style="width: 400px;">
-    <img src="images/500x300.jpg" class="card-img" alt="...">
+<div class="card w-300">
+    <img src="images/800x600.jpg" class="card-img" alt="...">
     <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -280,6 +279,10 @@ Prácticando lo aprendido:
 ```
 
 ```css
+.w-300 {
+    width: 300px;
+}
+
 .card {
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 5px;
@@ -303,5 +306,29 @@ Prácticando lo aprendido:
 
 .card-text {
     line-height: 1.5;
+}
+```
+
+## Fuentes
+[https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:wght@100;300;400;500;600;700;800;900](https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:wght@100;300;400;500;600;700;800;900)
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+```
+
+```css
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 ```
