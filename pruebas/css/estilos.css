@@ -12,7 +12,7 @@
     margin-right: auto;
 }
 
-.my-5{
+.my-5 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -55,11 +55,11 @@
     background-color: #fb7813;
 }
 
-.font-100{
+.font-100 {
     font-weight: 100;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -117,9 +117,70 @@
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    width: 200px;
 }
 
+/* Flexbox 2.0 */
+
+.border {
+    border: 2px #000 solid;
+}
+
+.h-700 {
+    height: 700px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* items */
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+.flex-shrink-0 {
+    width: 400px;
+    flex-shrink: 1;
+}
+
+.flex-basis-1 {
+    flex-basis: 50%;
+}
+
+.flex-1 {
+    flex: 1 1 300px;
+}
+
+.aling-self {
+    align-self: flex-start;
+}
+
+
+/* Flexbox 1.0 */
 .d-flex {
     display: flex;
     border: solid;
@@ -168,5 +229,3 @@
 .justify-content-around {
     justify-content: space-around;
 }
-
-
