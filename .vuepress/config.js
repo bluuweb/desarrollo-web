@@ -37,6 +37,7 @@ module.exports = {
       '/03-css/',
       '/04-css-intermedio/',
       '/05-flexbox/',
+      '/06-flexbox-practica/',
     ]
   }
 
