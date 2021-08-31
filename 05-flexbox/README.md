@@ -1,7 +1,8 @@
 # 05 - CSS Flexbox
 
-- [https://www.w3schools.com/css/css3_flexbox.asp](https://www.w3schools.com/css/css3_flexbox.asp)
-- [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+- [https://cssreference.io/](https://cssreference.io/flexbox/)
 
 ## Contenedor
 
@@ -312,4 +313,17 @@ Esto permite que se anule la alineación predeterminada (o la especificada por `
   <div class="item flex-1">item 2</div>
   <div class="item flex-1">item 3</div>
 </div>
+```
+
+## Notas
+
+- [inline-flex](https://altruistas.org/flex-e-inline-flex-de-flex-box-en-css-y-html/)
+- [Alinear icono y texto vertical](https://css-tricks.com/when-do-you-use-inline-block/)
+
+Alinear icono y texto vertical
+```css
+.button {
+  display: inline-flex;
+  align-items: center;
+}
 ```

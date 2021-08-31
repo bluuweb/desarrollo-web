@@ -73,6 +73,10 @@ Por lo tanto, un estilo en línea tiene la máxima prioridad y anulará los esti
 #### RGB y RGBA: (podemos agregar transparencia)
 * [https://www.w3schools.com/css/css_colors_rgb.asp](https://www.w3schools.com/css/css_colors_rgb.asp)
 
+#### HSL
+* [HSL #01](https://developer.mozilla.org/es/docs/Web/CSS/color_value#hsl())
+* [HSL #02](https://www.w3schools.com/colors/colors_hsl.asp)
+
 
 ## Selectores
 Hace referencia a como aplicamos estilos a determinados elementos HTML.
@@ -129,6 +133,7 @@ Documentación utilizada:
 * [Text align](https://www.w3schools.com/cssref/pr_text_text-align.asp)
 * [Background color](https://www.w3schools.com/cssref/pr_background-color.asp)
 * [Comentarios en CSS](https://www.w3schools.com/css/css_comments.asp)
+* [html colores codes](https://htmlcolorcodes.com/es/)
 
 ```css
 /* 

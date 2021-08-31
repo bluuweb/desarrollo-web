@@ -11,6 +11,13 @@ Ya habíamos trabajado con varios estilos por ende los vamos a reciclar:
 - Fuente [https://fonts.google.com/specimen/Ubuntu?sidebar.open=true](https://fonts.google.com/specimen/Ubuntu?sidebar.open=true)
 - [https://www.w3schools.com/cssref/css_units.asp](https://www.w3schools.com/cssref/css_units.asp)
 
+Otros recursos utilizados:
+
+- [https://color.adobe.com/es/create/image](https://color.adobe.com/es/create/image)
+- [https://lenguajecss.com/css/selectores/selectores-avanzados/](https://lenguajecss.com/css/selectores/selectores-avanzados/)
+- [https://www.iloveimg.com/es/redimensionar-imagen](https://www.iloveimg.com/es/redimensionar-imagen)
+- [https://developer.mozilla.org/es/docs/CSS/Media_queries](https://developer.mozilla.org/es/docs/CSS/Media_queries)
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
@@ -121,6 +128,7 @@ html {
 ## Navbar
 
 - Hover: [https://www.w3schools.com/cssref/sel_hover.asp](https://www.w3schools.com/cssref/sel_hover.asp)
+- CSS selectores Avanzados [https://lenguajecss.com/css/selectores/selectores-avanzados/](https://lenguajecss.com/css/selectores/selectores-avanzados/)
 
 ```html
 <div class="bg-dark">
@@ -129,9 +137,9 @@ html {
       <a href="#">ALTOs WEB</a>
     </div>
     <div class="navbar-menu">
-      <a href="#" class="btn bg-secondary mr-1">Inicio</a>
-      <a href="#" class="btn bg-secondary mr-1">Nosotros</a>
-      <a href="#" class="btn bg-secondary mr-1">Servicios</a>
+      <a href="#" class="btn bg-secondary">Inicio</a>
+      <a href="#" class="btn bg-secondary">Nosotros</a>
+      <a href="#" class="btn bg-secondary">Servicios</a>
       <a href="#" class="btn bg-secondary">Contacto</a>
     </div>
   </nav>
@@ -357,7 +365,6 @@ html {
     width: 100%;
   }
   .navbar-menu a {
-    margin-right: 0;
     text-align: center;
     margin-bottom: 1rem;
   }

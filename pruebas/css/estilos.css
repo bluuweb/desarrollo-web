@@ -12,14 +12,14 @@ html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-a {
-}
+a {}
 
 .container {
   width: 80%;
@@ -94,6 +94,10 @@ a {
   text-transform: uppercase;
 }
 
+.active {
+  background-color: #2d2c59;
+}
+
 /* Práctica Flexbox */
 
 .navbar {
@@ -123,10 +127,12 @@ a {
   text-align: center;
   margin: 3rem 0;
 }
+
 .center h1 {
   font-weight: 300;
   color: #383e56;
 }
+
 .center hr {
   border-style: solid;
   border-color: #383e56;
@@ -202,10 +208,12 @@ a {
 
 /* Responsive */
 @media (max-width: 1090px) {
+
   /* navbar */
   .navbar {
     flex-direction: column;
   }
+
   .navbar-menu {
     margin-top: 2rem;
   }
@@ -217,6 +225,7 @@ a {
 }
 
 @media (max-width: 860px) {
+
   /* card */
   .main-card {
     flex-direction: column;
@@ -226,10 +235,12 @@ a {
   .vertical-card {
     flex-direction: column;
   }
+
   .vertical-card-content {
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
+
   .vertical-card img {
     width: 100%;
     height: auto;
@@ -237,15 +248,28 @@ a {
 }
 
 @media (max-width: 685px) {
+
   /* navbar */
   .navbar-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
+
   .navbar-menu a {
     margin-right: 0;
     text-align: center;
     margin-bottom: 1rem;
   }
+}
+
+/* Galeria */
+.galeria {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.galeria img {
+  width: 100%;
 }

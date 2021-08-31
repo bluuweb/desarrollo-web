@@ -54,7 +54,10 @@ Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho que 
 * ``<img>``
 
 #### HTML estilos por defecto
-[https://www.w3schools.com/cssref/css_default_values.asp](https://www.w3schools.com/cssref/css_default_values.asp)
+- [https://www.w3schools.com/cssref/css_default_values.asp](https://www.w3schools.com/cssref/css_default_values.asp)
+
+#### ¿De línea o de bloque?
+- [html reference](https://htmlreference.io/)
 
 ## Padding
 Las paddingpropiedades CSS se utilizan para generar espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.
@@ -141,194 +144,264 @@ div {
 }
 ```
 
+## Unidades relativas vs Abosultas
+En CSS se pueden utilizar diferentes unidades de medida y no existe "la más recomendable". Es necesario conocerlas y saber cómo funcionan en el contexto para evaluar cuál es la más conveniente en cada caso. [más info](https://www.laurachuburu.com.ar/tutoriales/unidades-de-medida-css.php)
+
+### Medidas absolutas
+Su valor se encuentra definido en términos concretos y de manera medible. Esto quiere decir que no depende de otro valor de referencia, ni del contexto.
+
+- mm: milímetros.
+- cm: centímetros.
+- in: pulgada ("inches", en inglés). Una pulgada equivale a 2.54 centímetros.
+- pt: puntos. Un punto equivale a 1 /72 de pulgada, es decir, unos 0.35 milímetros.
+- pc: picas. Una pica equivale a 12 puntos, o aproximadamente a 4.23 milímetros.
+- px: pixel. Es la unidad mínima de resolución de la pantalla. En realidad suele considerársela una unidad.
+
+### Medidas relativas
+Las unidades relativas no son valores exactos sino que se calculan a partir de otro valor de referencia. A pesar de parecer más difíciles de calcular son las más utilizadas en el diseño de sitios web responsive por su adaptabilidad a los diferentes dispositivos.
+
+- em: Tamaño relativo al tamaño de texto de su contenedor.
+- rem: Funciona igual que el em, con la diferencia que es relativo al valor de la fuente del elemento html
+
+REM
+```css
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1rem;
+    background-color: aqua;
+    padding: 5rem;
+}
+```
+
+EM
+```css
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 32px;
+}
+
+h1 {
+    /* Ahora serán 32px! */
+    font-size: 1em;
+    background-color: aqua;
+    padding: 5rem;
+}
+```
+
+```css
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    background-color: aqua;
+    padding: 1em;
+
+```
+
 ## Normalize CSS
 [https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)
 
 Normalize.css hace que los navegadores procesen todos los elementos de manera más consistente y en línea con los estándares modernos. Precisamente se dirige solo a los estilos que necesitan normalizarse.
 
 ## Práctica
-Prácticando lo aprendido:
 
-### Normalize
-
+### HTML
 ```html
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primer sitio web con CSS</title>
+    <title>Práctica CSS</title>
+
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-```
 
-### Container centrado
-
-```html
-<body class="mt-5 container mx-auto">
-
-    <!-- logo -->
-    <div class="bg-primary w-500 mx-auto text-center">
-        <a href="#" class="logo text-white">Logo Empresa</a>
-    </div>
-
+<body>
+    <header>
+        <a href="/">Logo Empresa</a>
+    </header>
+    <nav>
+        <a href="#">primary</a>
+        <a href="#">secondary</a>
+        <a href="#">danger</a>
+        <a href="#">info</a>
+    </nav>
+    <section>
+        <article>
+            <img src="" alt="">
+            <div>
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet exercitationem quod adipisci a
+                    eaque tempore recusandae voluptatibus atque sed ratione dolores, officia deserunt et dolorum sunt
+                    velit quis excepturi eius.</p>
+                <a href="https://www.google.cl/" target="_blank">Google</a>
+            </div>
+        </article>
+    </section>
 </body>
+
+</html>
 ```
 
+### Recursos
+- [Normalize](https://necolas.github.io/normalize.css/)
+- [Box Sizing](https://css-tricks.com/box-sizing/#universal-box-sizing-with-inheritance)
+- [photos](https://picsum.photos/)
+- [Fuentes](https://fonts.google.com/)
+- [coolors.co](https://coolors.co/palettes/trending)
+
+### Clases
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica CSS</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <a href="/" class="logo">Logo Empresa</a>
+    </header>
+    <nav class="container mt-2">
+        <a href="#" class="btn btn-primary">primary</a>
+        <a href="#" class="btn btn-secondary">secondary</a>
+        <a href="#" class="btn btn-danger">danger</a>
+        <a href="#" class="btn btn-info">info</a>
+    </nav>
+    <section class="container mt-2">
+        <article class="card">
+            <img src="assets/img/800x500.jpg" alt="" class="card-img">
+            <div class="card-body">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet exercitationem quod adipisci a
+                    eaque tempore recusandae voluptatibus atque sed ratione dolores, officia deserunt et dolorum sunt
+                    velit quis excepturi eius.</p>
+                <a href="https://www.google.cl/" target="_blanck" class="btn btn-success">Google</a>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
+```
+
+### CSS
 ```css
-/* Utilidades */
-* {
+html {
     box-sizing: border-box;
 }
-.container {
-    width: 90%;
-}
-.logo {
-    text-decoration: none;
-    font-size: 50px;
-    display: inline-block;
-    padding: 30px 0;
-    text-transform: uppercase;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-/* Margenes */
-.mx-auto {
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.container {
     margin-left: auto;
     margin-right: auto;
-}
-.mt-5 {
-    margin-top: 5px;
-}
-
-/* Medidas */
-.w-500 {
-    width: 500px;
-}
-
-/* Textos */
-.text-center{
-    text-align: center;
-}
-.text-white {
-    color: #ffffff;
-}
-
-/* Colores */
-.bg-primary {
-    background-color: #007bff;
-}
-
-
-```
-
-### botones
-
-```html
-<!-- botones -->
-<div class="my-5">
-    <a href="" class="btn bg-primary text-white">primary</a>
-    <a href="" class="btn bg-secondary text-white">secondary</a>
-    <a href="" class="btn bg-danger text-white">danger</a>
-    <a href="" class="btn bg-info text-white">info</a>
-    <a href="" class="btn bg-success text-white">success</a>
-</div>
-```
-
-```css
-.bg-primary {
-    background-color: #007bff;
-}
-
-.bg-secondary {
-    background-color: #383e56;
-}
-
-.bg-danger {
-    background-color: #e7305b;
-}
-
-.bg-info {
-    background-color: #fb7813;
-}
-
-.bg-success {
-    background-color: #184d47;
+    width: 95%;
+    max-width: 600px;
+    /* background-color: aqua; */
 }
 
 .btn {
     display: inline-block;
-    text-align: center;
-    padding: 10px 20px;
-    border-radius: 2px;
     text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
 }
-```
 
-### Cards
+.btn-primary {
+    color: white;
+    background-color: #264653;
+}
 
-```html
-<!-- cards -->
-<div class="card w-300">
-    <img src="images/800x600.jpg" class="card-img" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn bg-primary text-white">Go somewhere</a>
-    </div>
-</div>
-```
+.btn-secondary {
+    color: white;
+    background-color: #2a9d8f;
+}
 
-```css
-.w-300 {
-    width: 300px;
+.btn-danger {
+    color: white;
+    background-color: #e76f51;
+}
+
+.btn-info {
+    color: black;
+    background-color: #e9c46a;
+}
+
+.btn-success {
+    color: black;
+    background-color: #f4a261;
+}
+
+.logo {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding: 0.5em;
+    background-color: #264653;
 }
 
 .card {
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 5px;
+    width: 300px;
+    background-color: #2a9d8f;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
 }
 
 .card-img {
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .card-body {
-    padding: 18px;
+    padding: 1em;
 }
 
-.card-title {
-    font-size: 20px;
-    margin: 0;
-    color: #383e56;
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 700;
 }
 
-.card-text {
-    line-height: 1.5;
-}
-```
-
-## Fuentes
-[https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:wght@100;300;400;500;600;700;800;900](https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat:wght@100;300;400;500;600;700;800;900)
-
-```html
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    
-</head>
-```
-
-```css
-*{
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+.card-body p {
+    font-weight: 300;
 }
 ```
